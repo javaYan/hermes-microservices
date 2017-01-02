@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>hermes-microservices</artifactId>
+        <groupId>hermes</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>hermes.lottery</groupId>
+    <artifactId>hermes-lottery-service</artifactId>
+    <version>${hermes-lottery-service.version}</version>
+
+    <properties>
+        <!-- api -->
+        <hermes-lottery-api.version>1.0-SNAPSHOT</hermes-lottery-api.version>
+
+        <!-- service and dubbo -->
+        <hermes-lottery-service.version>1.0.0-SNAPSHOT</hermes-lottery-service.version>
+        <hermes-lottery-dubbo.version>1.0.0-SNAPSHOT</hermes-lottery-dubbo.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>hermes.lottery</groupId>
+            <artifactId>hermes-lottery-api</artifactId>
+            <version>${hermes-lottery-api.version}</version>
+        </dependency>
+        <!-- spring boot web -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- spring boot actuator -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+        <!-- lombok 包 -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+        <!-- guava -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+        </dependency>
+    </dependencies>
+</project>
