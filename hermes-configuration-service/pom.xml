@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>hermes-microservices</artifactId>
+        <groupId>hermes</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>hermes.configuration.service</groupId>
+    <artifactId>hermes-configuration-service</artifactId>
+    <version>${hermes-configuration-service.version}</version>
+
+    <properties>
+        <!-- api -->
+        <hermes-configuration-api.version>1.0-SNAPSHOT</hermes-configuration-api.version>
+
+        <!-- service and dubbo -->
+        <hermes-configuration-service.version>1.0.0-SNAPSHOT</hermes-configuration-service.version>
+        <hermes-configuration-dubbo.version>1.0.0-SNAPSHOT</hermes-configuration-dubbo.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>hermes.configuration.api</groupId>
+            <artifactId>hermes-configuration-api</artifactId>
+            <version>${hermes-configuration-api.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+        <!-- lombok 包 -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+        <!-- guava -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>2.5</version>
+                    <configuration>
+                        <encoding>UTF-8</encoding>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+</project>

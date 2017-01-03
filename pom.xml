@@ -10,6 +10,8 @@
     <modules>
         <module>hermes-lottery-api</module>
         <module>hermes-lottery-service</module>
+        <module>hermes-configuration-api</module>
+        <module>hermes-configuration-service</module>
     </modules>
     <packaging>pom</packaging>
 
