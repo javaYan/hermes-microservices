@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * Created by Mr_yyy on 2017/1/1.
  */
-@RestController("lotteryService")
+@RestController
 public class LotteryServiceImpl implements  LotteryService{
 
     private static Logger log = LoggerFactory.getLogger(LotteryServiceImpl.class);
 
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping(value = "lottery",method = RequestMethod.GET)
     @Override
     public LotteryVo doGet(Integer type, String number) {
         log.info("LotteryServiceImpl doGet : type-[{}], number-[{}]", type, number);

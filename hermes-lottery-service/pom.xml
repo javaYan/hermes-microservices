@@ -20,6 +20,8 @@
         <!-- service and dubbo -->
         <hermes-lottery-service.version>1.0.0-SNAPSHOT</hermes-lottery-service.version>
         <hermes-lottery-dubbo.version>1.0.0-SNAPSHOT</hermes-lottery-dubbo.version>
+
+        <start-class>hermes.lottery.LotteryApplication</start-class>
     </properties>
 
     <dependencies>
@@ -51,5 +53,12 @@
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+        </dependency>
+
+
     </dependencies>
 </project>
