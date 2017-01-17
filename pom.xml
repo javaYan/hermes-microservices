@@ -8,10 +8,9 @@
     <artifactId>hermes-microservices</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
+        <module>hermes-configuration-service</module>
         <module>hermes-lottery-api</module>
         <module>hermes-lottery-service</module>
-        <module>hermes-configuration-api</module>
-        <module>hermes-configuration-service</module>
     </modules>
     <packaging>pom</packaging>
 

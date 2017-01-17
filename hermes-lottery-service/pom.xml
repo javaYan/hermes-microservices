@@ -20,11 +20,18 @@
         <!-- service and dubbo -->
         <hermes-lottery-service.version>1.0.0-SNAPSHOT</hermes-lottery-service.version>
         <hermes-lottery-dubbo.version>1.0.0-SNAPSHOT</hermes-lottery-dubbo.version>
+        <hermes-configuration-service.version>1.0.0-SNAPSHOT</hermes-configuration-service.version>
 
         <start-class>hermes.lottery.LotteryApplication</start-class>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>hermes.configuration.service</groupId>
+            <artifactId>hermes-configuration-service</artifactId>
+            <version>${hermes-configuration-service.version}</version>
+        </dependency>
+
         <dependency>
             <groupId>hermes.lottery</groupId>
             <artifactId>hermes-lottery-api</artifactId>

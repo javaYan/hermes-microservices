@@ -91,7 +91,7 @@ public class LotteryDao {
                     Elements trElements = tbodyElement.children();
                     for(Element tr : trElements) {
                         String validateNumber = tr.child(0).text();
-                        if(validateNumber.compareTo(Constants.SUPERLOTTO_END_YEAR + Constants.MAX_SUFFIX_NUMBER)<=0 && validateNumber.compareTo(Constants.SUPERLOTTO_START_YEAR + Constants.MIN_SUFFIX_NUMBER)>=0) {
+                        if(validateNumber.compareTo(Constants.SUPERLOTTO_END_YEAR + Constants.MAX_SUFFIX_NUMBER)<=0 && validateNumber.compareTo("0" + Constants.SUPERLOTTO_START_YEAR + Constants.MIN_SUFFIX_NUMBER)>=0) {
                             Lottery lottery = new Lottery();
                             lottery.setType(LotteryEnum.SUPER_LOTTO.type);
                             lottery.setNumber(validateNumber);

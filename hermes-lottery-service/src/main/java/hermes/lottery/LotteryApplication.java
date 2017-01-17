@@ -2,11 +2,13 @@ package hermes.lottery;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 /**
  * Created by Mr_yyy on 2016/12/31.
  */
 @SpringBootApplication
+@ComponentScan(basePackages={"hermes"}) /*扫描全包*/
 public class LotteryApplication {
     public static void main(String[] args) {
         long starTime = System.currentTimeMillis();

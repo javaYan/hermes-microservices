@@ -1,15 +1,16 @@
 package hermes.lottery.util;
 
-import com.sun.javafx.binding.StringFormatter;
 import hermes.lottery.entity.Lottery;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Created by yanyuyu on 2017/1/16.
- * 七乐彩彩票信息容器，模拟数据库存储
+ * 大乐透彩票信息容器，模拟数据库存储
  */
-public class QiLeCaiContainer {
+public class SuperLottoContainer {
     private static final Map<String,Lottery> map;
 
     static {

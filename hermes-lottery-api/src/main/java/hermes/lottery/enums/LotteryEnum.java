@@ -16,4 +16,13 @@ public enum LotteryEnum {
 
     public Integer type;
     public String name;
+
+    public static String valueOf(int type) {
+        for (LotteryEnum lottery : values()) {
+            if (lottery.type == type) {
+                return lottery.name;
+            }
+        }
+        throw new IllegalArgumentException("No matching constant for [" + type + "]");
+    }
 }
