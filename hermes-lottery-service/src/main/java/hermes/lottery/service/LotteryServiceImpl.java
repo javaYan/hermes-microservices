@@ -1,5 +1,6 @@
 package hermes.lottery.service;
 
+import hermes.configuration.common.RestCodeMessage;
 import hermes.configuration.exception.BaseException;
 import hermes.lottery.entity.Lottery;
 import hermes.lottery.enums.LotteryEnum;
@@ -45,14 +46,14 @@ public class LotteryServiceImpl implements  LotteryService{
         } else {
             Map<String,Object> errorMap = new HashMap<String,Object>();
             errorMap.put("code",1);
-            throw new BaseException(422,"参数不正确！").debug("type值不正确").error(errorMap);
+            throw new BaseException(RestCodeMessage.Code.BAD_REQUEST, RestCodeMessage.Message.BAD_REQUEST).debug("type值不正确").error(errorMap);
         }
 
         if(lottery != null) {
             BeanUtils.copyProperties(lottery, vo);
             vo.setTypeName(LotteryEnum.valueOf(type));
         } else {
-            throw new BaseException(404,"彩票信息不存在！");
+            throw new BaseException(RestCodeMessage.Code.RESOURCE_NOT_FOUND, RestCodeMessage.Message.RESOURCE_NOT_FOUND).debug("彩票信息不存在！");
         }
 
         return vo;

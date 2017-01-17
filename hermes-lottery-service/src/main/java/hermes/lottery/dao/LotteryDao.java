@@ -24,7 +24,7 @@ public class LotteryDao {
 
     /**
      * 在线爬取双色球信息
-     * 期号：4位年份+3位数
+     * 期号：2位年份+3位数
      * @return
      */
     public List<Lottery> readDoubleBallOnLine() {
