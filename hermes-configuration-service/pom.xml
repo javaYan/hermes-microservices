@@ -14,7 +14,7 @@
     <version>${hermes-configuration-service.version}</version>
 
     <properties>
-        <!-- service and dubbo -->
+        <!-- service and dubbo version-->
         <hermes-configuration-service.version>1.0.0-SNAPSHOT</hermes-configuration-service.version>
     </properties>
 
