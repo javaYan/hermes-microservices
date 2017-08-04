@@ -1,0 +1,16 @@
+bin/
+*.iml
+.idea
+target/
+out/
+.settings/
+.project
+.classpath
+*.log
+*.log.*
+logs/
+.metadata/
+install.bat
+run.bat
+*.error
+.buildPatch
