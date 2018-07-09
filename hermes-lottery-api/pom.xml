@@ -15,18 +15,14 @@
 
     <properties>
         <hermes-lottery-api.version>1.0-SNAPSHOT</hermes-lottery-api.version>
+        <hermes-configuration.version>1.0.0-SNAPSHOT</hermes-configuration.version>
     </properties>
 
     <dependencies>
-
-        <!-- lombok 包 -->
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
+            <groupId>hermes.configuration</groupId>
+            <artifactId>hermes-configuration</artifactId>
+            <version>${hermes-configuration.version}</version>
         </dependency>
-
-
-
     </dependencies>
-
 </project>
